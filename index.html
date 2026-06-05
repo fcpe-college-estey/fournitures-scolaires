@@ -6,772 +6,772 @@
 <title>Commande Fournitures Scolaires 2026-2027 — FCPE Collège de l'Estey</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --fcpe-blue: #1a3a6b;
-    --fcpe-red: #c8102e;
-    --fcpe-yellow: #f5c400;
-    --green-total: #1e7e34;
-    --light-bg: #f4f7fb;
-    --card-bg: #ffffff;
-    --border: #d0daea;
-    --text: #1a2236;
-    --text-light: #5a6a85;
-    --shadow: 0 2px 16px rgba(26,58,107,0.09);
-    --radius: 12px;
-  }
+:root {
+--fcpe-blue: #1a3a6b;
+--fcpe-red: #c8102e;
+--fcpe-yellow: #f5c400;
+--green-total: #1e7e34;
+--light-bg: #f4f7fb;
+--card-bg: #ffffff;
+--border: #d0daea;
+--text: #1a2236;
+--text-light: #5a6a85;
+--shadow: 0 2px 16px rgba(26,58,107,0.09);
+--radius: 12px;
+}
 
-  * { box-sizing: border-box; margin: 0; padding: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
-  body {
-    font-family: 'Lato', sans-serif;
-    background: var(--light-bg);
-    color: var(--text);
-    min-height: 100vh;
-  }
+body {
+font-family: 'Lato', sans-serif;
+background: var(--light-bg);
+color: var(--text);
+min-height: 100vh;
+}
 
-  /* HEADER */
-  .site-header {
-    background: var(--fcpe-blue);
-    color: white;
-    padding: 18px 32px;
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.18);
-  }
-  .site-header .logo-circle {
-    width: 52px; height: 52px;
-    background: var(--fcpe-yellow);
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 900;
-    font-size: 18px;
-    color: var(--fcpe-blue);
-    flex-shrink: 0;
-  }
-  .site-header h1 {
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 800;
-    line-height: 1.2;
-  }
-  .site-header p {
-    font-size: 0.85rem;
-    opacity: 0.8;
-    margin-top: 2px;
-  }
+/* HEADER */
+.site-header {
+background: var(--fcpe-blue);
+color: white;
+padding: 18px 32px;
+display: flex;
+align-items: center;
+gap: 18px;
+box-shadow: 0 3px 12px rgba(0,0,0,0.18);
+}
+.site-header .logo-circle {
+width: 52px; height: 52px;
+background: var(--fcpe-yellow);
+border-radius: 50%;
+display: flex; align-items: center; justify-content: center;
+font-family: 'Nunito', sans-serif;
+font-weight: 900;
+font-size: 18px;
+color: var(--fcpe-blue);
+flex-shrink: 0;
+}
+.site-header h1 {
+font-family: 'Nunito', sans-serif;
+font-size: 1.25rem;
+font-weight: 800;
+line-height: 1.2;
+}
+.site-header p {
+font-size: 0.85rem;
+opacity: 0.8;
+margin-top: 2px;
+}
 
-  /* PROGRESS STEPS */
-  .steps-bar {
-    background: white;
-    border-bottom: 2px solid var(--border);
-    padding: 14px 32px;
-    display: flex;
-    gap: 0;
-    align-items: center;
-    justify-content: center;
-  }
-  .step {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 6px 16px;
-    border-radius: 20px;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    font-size: 0.82rem;
-    color: var(--text-light);
-    transition: all 0.3s;
-  }
-  .step.active {
-    background: var(--fcpe-blue);
-    color: white;
-  }
-  .step.done {
-    color: var(--green-total);
-  }
-  .step-num {
-    width: 24px; height: 24px;
-    border-radius: 50%;
-    border: 2px solid currentColor;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 0.75rem;
-    font-weight: 800;
-    flex-shrink: 0;
-  }
-  .step.active .step-num { background: rgba(255,255,255,0.25); border-color: white; }
-  .step-arrow { color: var(--border); font-size: 1.2rem; margin: 0 4px; }
+/* PROGRESS STEPS */
+.steps-bar {
+background: white;
+border-bottom: 2px solid var(--border);
+padding: 14px 32px;
+display: flex;
+gap: 0;
+align-items: center;
+justify-content: center;
+}
+.step {
+display: flex;
+align-items: center;
+gap: 8px;
+padding: 6px 16px;
+border-radius: 20px;
+font-family: 'Nunito', sans-serif;
+font-weight: 700;
+font-size: 0.82rem;
+color: var(--text-light);
+transition: all 0.3s;
+}
+.step.active {
+background: var(--fcpe-blue);
+color: white;
+}
+.step.done {
+color: var(--green-total);
+}
+.step-num {
+width: 24px; height: 24px;
+border-radius: 50%;
+border: 2px solid currentColor;
+display: flex; align-items: center; justify-content: center;
+font-size: 0.75rem;
+font-weight: 800;
+flex-shrink: 0;
+}
+.step.active .step-num { background: rgba(255,255,255,0.25); border-color: white; }
+.step-arrow { color: var(--border); font-size: 1.2rem; margin: 0 4px; }
 
-  /* SCREENS */
-  .screen { display: none; }
-  .screen.active { display: block; }
+/* SCREENS */
+.screen { display: none; }
+.screen.active { display: block; }
 
-  .screen-inner {
-    max-width: 720px;
-    margin: 40px auto;
-    padding: 0 20px 60px;
-  }
+.screen-inner {
+max-width: 720px;
+margin: 40px auto;
+padding: 0 20px 60px;
+}
 
-  /* CARD */
-  .card {
-    background: var(--card-bg);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    padding: 36px;
-    border: 1px solid var(--border);
-  }
+/* CARD */
+.card {
+background: var(--card-bg);
+border-radius: var(--radius);
+box-shadow: var(--shadow);
+padding: 36px;
+border: 1px solid var(--border);
+}
 
-  .card-title {
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--fcpe-blue);
-    margin-bottom: 6px;
-  }
-  .card-subtitle {
-    color: var(--text-light);
-    font-size: 0.95rem;
-    margin-bottom: 28px;
-    line-height: 1.5;
-  }
+.card-title {
+font-family: 'Nunito', sans-serif;
+font-size: 1.5rem;
+font-weight: 800;
+color: var(--fcpe-blue);
+margin-bottom: 6px;
+}
+.card-subtitle {
+color: var(--text-light);
+font-size: 0.95rem;
+margin-bottom: 28px;
+line-height: 1.5;
+}
 
-  /* SCREEN 1 — ADHESION */
-  .adhesion-price-block {
-    background: linear-gradient(135deg, var(--fcpe-blue), #2d5fa8);
-    color: white;
-    border-radius: var(--radius);
-    padding: 28px 32px;
-    margin: 24px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  .adhesion-price-block .price {
-    font-family: 'Nunito', sans-serif;
-    font-size: 2.8rem;
-    font-weight: 900;
-    line-height: 1;
-  }
-  .adhesion-price-block .price-label {
-    font-size: 0.85rem;
-    opacity: 0.8;
-    margin-top: 4px;
-  }
-  .adhesion-benefits {
-    list-style: none;
-    margin: 20px 0 28px;
-  }
-  .adhesion-benefits li {
-    padding: 8px 0;
-    border-bottom: 1px solid var(--border);
-    font-size: 0.92rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .adhesion-benefits li::before {
-    content: "✓";
-    color: var(--green-total);
-    font-weight: 800;
-    font-size: 1rem;
-  }
+/* SCREEN 1 — ADHESION */
+.adhesion-price-block {
+background: linear-gradient(135deg, var(--fcpe-blue), #2d5fa8);
+color: white;
+border-radius: var(--radius);
+padding: 28px 32px;
+margin: 24px 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 20px;
+}
+.adhesion-price-block .price {
+font-family: 'Nunito', sans-serif;
+font-size: 2.8rem;
+font-weight: 900;
+line-height: 1;
+}
+.adhesion-price-block .price-label {
+font-size: 0.85rem;
+opacity: 0.8;
+margin-top: 4px;
+}
+.adhesion-benefits {
+list-style: none;
+margin: 20px 0 28px;
+}
+.adhesion-benefits li {
+padding: 8px 0;
+border-bottom: 1px solid var(--border);
+font-size: 0.92rem;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.adhesion-benefits li::before {
+content: "✓";
+color: var(--green-total);
+font-weight: 800;
+font-size: 1rem;
+}
 
-  /* BUTTONS */
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 14px 28px;
-    border-radius: 8px;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
-    font-size: 1rem;
-    cursor: pointer;
-    border: none;
-    transition: all 0.2s;
-    text-decoration: none;
-  }
-  .btn-primary {
-    background: var(--fcpe-blue);
-    color: white;
-    box-shadow: 0 4px 14px rgba(26,58,107,0.3);
-  }
-  .btn-primary:hover { background: #122d58; transform: translateY(-1px); }
-  .btn-success {
-    background: var(--green-total);
-    color: white;
-    box-shadow: 0 4px 14px rgba(30,126,52,0.3);
-  }
-  .btn-success:hover { background: #155a27; transform: translateY(-1px); }
-  .btn-secondary {
-    background: white;
-    color: var(--fcpe-blue);
-    border: 2px solid var(--border);
-  }
-  .btn-secondary:hover { border-color: var(--fcpe-blue); background: var(--light-bg); }
-  .btn-large { padding: 16px 36px; font-size: 1.1rem; }
+/* BUTTONS */
+.btn {
+display: inline-flex;
+align-items: center;
+gap: 8px;
+padding: 14px 28px;
+border-radius: 8px;
+font-family: 'Nunito', sans-serif;
+font-weight: 800;
+font-size: 1rem;
+cursor: pointer;
+border: none;
+transition: all 0.2s;
+text-decoration: none;
+}
+.btn-primary {
+background: var(--fcpe-blue);
+color: white;
+box-shadow: 0 4px 14px rgba(26,58,107,0.3);
+}
+.btn-primary:hover { background: #122d58; transform: translateY(-1px); }
+.btn-success {
+background: var(--green-total);
+color: white;
+box-shadow: 0 4px 14px rgba(30,126,52,0.3);
+}
+.btn-success:hover { background: #155a27; transform: translateY(-1px); }
+.btn-secondary {
+background: white;
+color: var(--fcpe-blue);
+border: 2px solid var(--border);
+}
+.btn-secondary:hover { border-color: var(--fcpe-blue); background: var(--light-bg); }
+.btn-large { padding: 16px 36px; font-size: 1.1rem; }
 
-  .btn-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 28px;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
+.btn-row {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 28px;
+flex-wrap: wrap;
+gap: 12px;
+}
 
-  /* SCREEN 2 — QUESTIONNAIRE */
-  .form-group { margin-bottom: 28px; }
-  .form-label {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
-    font-size: 1.05rem;
-    color: var(--fcpe-blue);
-    margin-bottom: 12px;
-    display: block;
-  }
-  .form-label span {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px; height: 28px;
-    background: var(--fcpe-yellow);
-    border-radius: 50%;
-    color: var(--fcpe-blue);
-    font-size: 0.85rem;
-    margin-right: 8px;
-    flex-shrink: 0;
-  }
+/* SCREEN 2 — QUESTIONNAIRE */
+.form-group { margin-bottom: 28px; }
+.form-label {
+font-family: 'Nunito', sans-serif;
+font-weight: 800;
+font-size: 1.05rem;
+color: var(--fcpe-blue);
+margin-bottom: 12px;
+display: block;
+}
+.form-label span {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+width: 28px; height: 28px;
+background: var(--fcpe-yellow);
+border-radius: 50%;
+color: var(--fcpe-blue);
+font-size: 0.85rem;
+margin-right: 8px;
+flex-shrink: 0;
+}
 
-  select.form-select {
-    width: 100%;
-    max-width: 220px;
-    padding: 12px 16px;
-    border: 2px solid var(--border);
-    border-radius: 8px;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    color: var(--text);
-    background: white;
-    cursor: pointer;
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%231a3a6b' stroke-width='2' fill='none'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 14px center;
-    transition: border-color 0.2s;
-  }
-  select.form-select:focus { outline: none; border-color: var(--fcpe-blue); }
+select.form-select {
+width: 100%;
+max-width: 220px;
+padding: 12px 16px;
+border: 2px solid var(--border);
+border-radius: 8px;
+font-family: 'Nunito', sans-serif;
+font-weight: 700;
+font-size: 1rem;
+color: var(--text);
+background: white;
+cursor: pointer;
+appearance: none;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%231a3a6b' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+background-repeat: no-repeat;
+background-position: right 14px center;
+transition: border-color 0.2s;
+}
+select.form-select:focus { outline: none; border-color: var(--fcpe-blue); }
 
-  .classes-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-    max-width: 380px;
-  }
-  .class-checkbox {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 14px 18px;
-    border: 2px solid var(--border);
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.2s;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    font-size: 1.05rem;
-    user-select: none;
-  }
-  .class-checkbox:hover { border-color: var(--fcpe-blue); background: var(--light-bg); }
-  .class-checkbox.selected {
-    border-color: var(--fcpe-blue);
-    background: #eef3fb;
-    color: var(--fcpe-blue);
-  }
-  .class-checkbox input[type="checkbox"] { display: none; }
-  .class-checkbox .check-icon {
-    width: 22px; height: 22px;
-    border: 2px solid var(--border);
-    border-radius: 5px;
-    display: flex; align-items: center; justify-content: center;
-    flex-shrink: 0;
-    transition: all 0.2s;
-  }
-  .class-checkbox.selected .check-icon {
-    background: var(--fcpe-blue);
-    border-color: var(--fcpe-blue);
-    color: white;
-    font-size: 0.8rem;
-  }
+.classes-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 12px;
+max-width: 380px;
+}
+.class-checkbox {
+display: flex;
+align-items: center;
+gap: 12px;
+padding: 14px 18px;
+border: 2px solid var(--border);
+border-radius: 10px;
+cursor: pointer;
+transition: all 0.2s;
+font-family: 'Nunito', sans-serif;
+font-weight: 700;
+font-size: 1.05rem;
+user-select: none;
+}
+.class-checkbox:hover { border-color: var(--fcpe-blue); background: var(--light-bg); }
+.class-checkbox.selected {
+border-color: var(--fcpe-blue);
+background: #eef3fb;
+color: var(--fcpe-blue);
+}
+.class-checkbox input[type="checkbox"] { display: none; }
+.class-checkbox .check-icon {
+width: 22px; height: 22px;
+border: 2px solid var(--border);
+border-radius: 5px;
+display: flex; align-items: center; justify-content: center;
+flex-shrink: 0;
+transition: all 0.2s;
+}
+.class-checkbox.selected .check-icon {
+background: var(--fcpe-blue);
+border-color: var(--fcpe-blue);
+color: white;
+font-size: 0.8rem;
+}
 
-  /* CHILDREN CLASSES — si plusieurs enfants */
-  #children-classes-detail {
-    margin-top: 16px;
-  }
-  .child-row {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 10px;
-    padding: 12px 16px;
-    background: var(--light-bg);
-    border-radius: 8px;
-    border: 1px solid var(--border);
-  }
-  .child-row label {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    font-size: 0.9rem;
-    color: var(--fcpe-blue);
-    min-width: 90px;
-  }
+/* CHILDREN CLASSES — si plusieurs enfants */
+#children-classes-detail {
+margin-top: 16px;
+}
+.child-row {
+display: flex;
+align-items: center;
+gap: 14px;
+margin-bottom: 10px;
+padding: 12px 16px;
+background: var(--light-bg);
+border-radius: 8px;
+border: 1px solid var(--border);
+}
+.child-row label {
+font-family: 'Nunito', sans-serif;
+font-weight: 700;
+font-size: 0.9rem;
+color: var(--fcpe-blue);
+min-width: 90px;
+}
 
-  /* SCREEN 3 — FORMULAIRE */
-  .screen-inner-wide {
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 0 20px 80px;
-  }
+/* SCREEN 3 — FORMULAIRE */
+.screen-inner-wide {
+max-width: 1000px;
+margin: 30px auto;
+padding: 0 20px 80px;
+}
 
-  /* ALERTE ROUGE */
-  .alert-red {
-    background: #fff5f5;
-    border: 2px solid var(--fcpe-red);
-    border-radius: var(--radius);
-    padding: 20px 24px;
-    margin-bottom: 28px;
-  }
-  .alert-red .alert-title {
-    color: var(--fcpe-red);
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
-    font-size: 1rem;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .alert-red ul {
-    padding-left: 20px;
-    font-size: 0.88rem;
-    color: #7a1a1a;
-    line-height: 1.7;
-  }
-  .alert-red .alert-note {
-    margin-top: 12px;
-    padding-top: 12px;
-    border-top: 1px solid #f5c4c4;
-    font-size: 0.88rem;
-    color: #7a1a1a;
-    font-weight: 600;
-    line-height: 1.6;
-  }
+/* ALERTE ROUGE */
+.alert-red {
+background: #fff5f5;
+border: 2px solid var(--fcpe-red);
+border-radius: var(--radius);
+padding: 20px 24px;
+margin-bottom: 28px;
+}
+.alert-red .alert-title {
+color: var(--fcpe-red);
+font-family: 'Nunito', sans-serif;
+font-weight: 800;
+font-size: 1rem;
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+.alert-red ul {
+padding-left: 20px;
+font-size: 0.88rem;
+color: #7a1a1a;
+line-height: 1.7;
+}
+.alert-red .alert-note {
+margin-top: 12px;
+padding-top: 12px;
+border-top: 1px solid #f5c4c4;
+font-size: 0.88rem;
+color: #7a1a1a;
+font-weight: 600;
+line-height: 1.6;
+}
 
-  /* TABLE COMMANDE */
-  .theme-block {
-    background: var(--card-bg);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    border: 1px solid var(--border);
-    margin-bottom: 20px;
-    overflow: hidden;
-  }
-  .theme-header {
-    background: var(--fcpe-blue);
-    color: white;
-    padding: 12px 20px;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
-    font-size: 0.95rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-  }
+/* TABLE COMMANDE */
+.theme-block {
+background: var(--card-bg);
+border-radius: var(--radius);
+box-shadow: var(--shadow);
+border: 1px solid var(--border);
+margin-bottom: 20px;
+overflow: hidden;
+}
+.theme-header {
+background: var(--fcpe-blue);
+color: white;
+padding: 12px 20px;
+font-family: 'Nunito', sans-serif;
+font-weight: 800;
+font-size: 0.95rem;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+}
 
-  .item-row {
-    display: grid;
-    align-items: center;
-    padding: 12px 20px;
-    border-bottom: 1px solid var(--border);
-    gap: 12px;
-    transition: background 0.15s;
-  }
-  .item-row:last-child { border-bottom: none; }
-  .item-row:hover { background: var(--light-bg); }
+.item-row {
+display: grid;
+align-items: center;
+padding: 12px 20px;
+border-bottom: 1px solid var(--border);
+gap: 12px;
+transition: background 0.15s;
+}
+.item-row:last-child { border-bottom: none; }
+.item-row:hover { background: var(--light-bg); }
 
-  /* Colonnes selon nb enfants */
-  .item-row.children-1 { grid-template-columns: 1fr 120px 90px; }
-  .item-row.children-2 { grid-template-columns: 1fr 120px 120px 90px; }
-  .item-row.children-3 { grid-template-columns: 1fr 120px 120px 120px 90px; }
-  .item-row.children-4 { grid-template-columns: 1fr 120px 120px 120px 120px 90px; }
+/* Colonnes selon nb enfants */
+.item-row.children-1 { grid-template-columns: 1fr 120px 90px; }
+.item-row.children-2 { grid-template-columns: 1fr 120px 120px 90px; }
+.item-row.children-3 { grid-template-columns: 1fr 120px 120px 120px 90px; }
+.item-row.children-4 { grid-template-columns: 1fr 120px 120px 120px 120px 90px; }
 
-  .col-header-row {
-    background: #f0f4fb !important;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
-    font-size: 0.78rem;
-    color: var(--fcpe-blue);
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    padding: 8px 20px !important;
-  }
-  .col-header-row:hover { background: #f0f4fb !important; }
+.col-header-row {
+background: #f0f4fb !important;
+font-family: 'Nunito', sans-serif;
+font-weight: 800;
+font-size: 0.78rem;
+color: var(--fcpe-blue);
+text-transform: uppercase;
+letter-spacing: 0.04em;
+padding: 8px 20px !important;
+}
+.col-header-row:hover { background: #f0f4fb !important; }
 
-  .item-name {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    color: var(--text);
-  }
-  .item-note {
-    font-size: 0.78rem;
-    color: var(--text-light);
-    font-style: italic;
-    margin-top: 2px;
-  }
-  .item-text-info {
-    font-size: 0.82rem;
-    color: var(--text-light);
-    font-style: italic;
-    background: #f8f9fa;
-    padding: 4px 10px;
-    border-radius: 4px;
-    border: 1px solid var(--border);
-  }
+.item-name {
+font-size: 0.9rem;
+line-height: 1.4;
+color: var(--text);
+}
+.item-note {
+font-size: 0.78rem;
+color: var(--text-light);
+font-style: italic;
+margin-top: 2px;
+}
+.item-text-info {
+font-size: 0.82rem;
+color: var(--text-light);
+font-style: italic;
+background: #f8f9fa;
+padding: 4px 10px;
+border-radius: 4px;
+border: 1px solid var(--border);
+}
 
-  select.qty-select {
-    width: 100%;
-    padding: 8px 10px;
-    border: 1.5px solid var(--border);
-    border-radius: 7px;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    font-size: 0.95rem;
-    color: var(--text);
-    background: white;
-    cursor: pointer;
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%231a3a6b' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    transition: border-color 0.2s;
-  }
-  select.qty-select:focus { outline: none; border-color: var(--fcpe-blue); }
+select.qty-select {
+width: 100%;
+padding: 8px 10px;
+border: 1.5px solid var(--border);
+border-radius: 7px;
+font-family: 'Nunito', sans-serif;
+font-weight: 700;
+font-size: 0.95rem;
+color: var(--text);
+background: white;
+cursor: pointer;
+appearance: none;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%231a3a6b' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+background-repeat: no-repeat;
+background-position: right 10px center;
+transition: border-color 0.2s;
+}
+select.qty-select:focus { outline: none; border-color: var(--fcpe-blue); }
 
-  .price-cell {
-    background: #f0f8f2;
-    border: 1px solid #c3e6cb;
-    border-radius: 7px;
-    padding: 8px 12px;
-    text-align: right;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
-    font-size: 0.95rem;
-    color: var(--green-total);
-    min-width: 80px;
-  }
+.price-cell {
+background: #f0f8f2;
+border: 1px solid #c3e6cb;
+border-radius: 7px;
+padding: 8px 12px;
+text-align: right;
+font-family: 'Nunito', sans-serif;
+font-weight: 800;
+font-size: 0.95rem;
+color: var(--green-total);
+min-width: 80px;
+}
 
-  /* TOTAL */
-  .total-block {
-    background: var(--green-total);
-    color: white;
-    border-radius: var(--radius);
-    padding: 24px 32px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 28px;
-    box-shadow: 0 4px 20px rgba(30,126,52,0.25);
-  }
-  .total-label {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    font-size: 1.1rem;
-    opacity: 0.9;
-  }
-  .total-amount {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 900;
-    font-size: 2.4rem;
-    line-height: 1;
-  }
+/* TOTAL */
+.total-block {
+background: var(--green-total);
+color: white;
+border-radius: var(--radius);
+padding: 24px 32px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 28px;
+box-shadow: 0 4px 20px rgba(30,126,52,0.25);
+}
+.total-label {
+font-family: 'Nunito', sans-serif;
+font-weight: 700;
+font-size: 1.1rem;
+opacity: 0.9;
+}
+.total-amount {
+font-family: 'Nunito', sans-serif;
+font-weight: 900;
+font-size: 2.4rem;
+line-height: 1;
+}
 
-  /* BOTTOM ACTIONS */
-  .bottom-actions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 28px;
-    flex-wrap: wrap;
-    gap: 14px;
-    padding: 0 0 40px;
-  }
+/* BOTTOM ACTIONS */
+.bottom-actions {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 28px;
+flex-wrap: wrap;
+gap: 14px;
+padding: 0 0 40px;
+}
 
-  .info-box {
-    background: #fff8e1;
-    border: 1px solid #ffe082;
-    border-radius: 8px;
-    padding: 14px 18px;
-    font-size: 0.88rem;
-    color: #5a4000;
-    line-height: 1.5;
-    margin-top: 16px;
-  }
-  .info-box strong { color: #3a2800; }
+.info-box {
+background: #fff8e1;
+border: 1px solid #ffe082;
+border-radius: 8px;
+padding: 14px 18px;
+font-size: 0.88rem;
+color: #5a4000;
+line-height: 1.5;
+margin-top: 16px;
+}
+.info-box strong { color: #3a2800; }
 
-  @media (max-width: 700px) {
-    .item-row.children-1,
-    .item-row.children-2,
-    .item-row.children-3,
-    .item-row.children-4 {
-      grid-template-columns: 1fr;
-    }
-    .adhesion-price-block { flex-direction: column; text-align: center; }
-    .classes-grid { grid-template-columns: repeat(2, 1fr); }
-    .total-block { flex-direction: column; gap: 10px; text-align: center; }
-  }
+@media (max-width: 700px) {
+.item-row.children-1,
+.item-row.children-2,
+.item-row.children-3,
+.item-row.children-4 {
+grid-template-columns: 1fr;
+}
+.adhesion-price-block { flex-direction: column; text-align: center; }
+.classes-grid { grid-template-columns: repeat(2, 1fr); }
+.total-block { flex-direction: column; gap: 10px; text-align: center; }
+}
 </style>
 </head>
 <body>
 
 <!-- HEADER -->
 <header class="site-header">
-  <div class="logo-circle">FCPE</div>
-  <div>
-    <h1>Commande Fournitures Scolaires 2026-2027</h1>
-    <p>Collège de l'Estey — Saint-Jean-d'Illac</p>
-  </div>
+<div class="logo-circle">FCPE</div>
+<div>
+<h1>Commande Fournitures Scolaires 2026-2027</h1>
+<p>Collège de l'Estey — Saint-Jean-d'Illac</p>
+</div>
 </header>
 
 <!-- PROGRESS BAR -->
 <div class="steps-bar">
-  <div class="step active" id="step1-indicator">
-    <div class="step-num">1</div>
-    Adhésion FCPE
-  </div>
-  <span class="step-arrow">›</span>
-  <div class="step" id="step2-indicator">
-    <div class="step-num">2</div>
-    Vos enfants
-  </div>
-  <span class="step-arrow">›</span>
-  <div class="step" id="step3-indicator">
-    <div class="step-num">3</div>
-    Commande
-  </div>
-  <span class="step-arrow">›</span>
-  <div class="step" id="step4-indicator">
-    <div class="step-num">4</div>
-    Paiement
-  </div>
+<div class="step active" id="step1-indicator">
+<div class="step-num">1</div>
+Adhésion FCPE
+</div>
+<span class="step-arrow">›</span>
+<div class="step" id="step2-indicator">
+<div class="step-num">2</div>
+Vos enfants
+</div>
+<span class="step-arrow">›</span>
+<div class="step" id="step3-indicator">
+<div class="step-num">3</div>
+Commande
+</div>
+<span class="step-arrow">›</span>
+<div class="step" id="step4-indicator">
+<div class="step-num">4</div>
+Paiement
+</div>
 </div>
 
 <!-- ===== ÉCRAN 1 : ADHÉSION ===== -->
 <div class="screen active" id="screen1">
-  <div class="screen-inner">
-    <div class="card">
-      <div class="card-title">Adhésion à la FCPE</div>
-      <div class="card-subtitle">
-        Pour accéder à la commande groupée de fournitures scolaires, une adhésion à la FCPE du Collège de l'Estey est obligatoire pour l'année 2026-2027.
-      </div>
+<div class="screen-inner">
+<div class="card">
+<div class="card-title">Adhésion à la FCPE</div>
+<div class="card-subtitle">
+Pour accéder à la commande groupée de fournitures scolaires, une adhésion à la FCPE du Collège de l'Estey est obligatoire pour l'année 2026-2027.
+</div>
 
-      <div class="adhesion-price-block">
-        <div>
-          <div style="font-family:'Nunito',sans-serif;font-weight:700;font-size:1rem;opacity:0.85;margin-bottom:6px;">Adhésion annuelle FCPE</div>
-          <div class="price">14,35 €</div>
-          <div class="price-label">par famille — année scolaire 2026-2027</div>
-        </div>
-        <div style="font-size:2.5rem;">🏫</div>
-      </div>
+<div class="adhesion-price-block">
+<div>
+<div style="font-family:'Nunito',sans-serif;font-weight:700;font-size:1rem;opacity:0.85;margin-bottom:6px;">Adhésion annuelle FCPE</div>
+<div class="price">14,35 €</div>
+<div class="price-label">par famille — année scolaire 2026-2027</div>
+</div>
+<div style="font-size:2.5rem;">🏫</div>
+</div>
 
-      <ul class="adhesion-benefits">
-        <li>Accès à la commande groupée de fournitures scolaires à tarifs négociés</li>
-        <li>Participation aux réunions parents d'élèves FCPE</li>
-        <li>Soutien aux actions menées pour les élèves du collège</li>
-        <li>1 adhésion valable pour toute la famille, quel que soit le nombre d'enfants</li>
-      </ul>
+<ul class="adhesion-benefits">
+<li>Accès à la commande groupée de fournitures scolaires à tarifs négociés</li>
+<li>Participation aux réunions parents d'élèves FCPE</li>
+<li>Soutien aux actions menées pour les élèves du collège</li>
+<li>1 adhésion valable pour toute la famille, quel que soit le nombre d'enfants</li>
+</ul>
 
-      <div class="info-box">
-        <strong>ℹ️ Comment ça marche ?</strong><br>
-        Après avoir réglé votre adhésion via HelloAsso, vous accéderez au formulaire de commande des fournitures scolaires. Votre commande sera ensuite regroupée et livrée avant la rentrée.
-      </div>
+<div class="info-box">
+<strong>ℹ️ Comment ça marche ?</strong><br>
+Après avoir réglé votre adhésion via HelloAsso, vous accéderez au formulaire de commande des fournitures scolaires. Votre commande sera ensuite regroupée et livrée avant la rentrée.
+</div>
 
-      <div class="btn-row">
-        <div></div>
-        <a href="https://www.helloasso.com/associations/conseil-local-fcpe-college-de-l-estey/adhesions/adhesion-fcpe-2026-2027-college-de-l-estey" target="_blank" class="btn btn-primary btn-large">
-          💳 Payer mon adhésion sur HelloAsso
-        </a>
-      </div>
+<div class="btn-row">
+<div></div>
+<a href="https://www.helloasso.com/associations/conseil-local-fcpe-college-de-l-estey/adhesions/adhesion-fcpe-2026-2027-college-de-l-estey" target="_blank" class="btn btn-primary btn-large">
+💳 Payer mon adhésion sur HelloAsso
+</a>
+</div>
 
-      <div style="text-align:center;margin-top:20px;">
-        <button class="btn btn-secondary" onclick="goToScreen(2)" style="font-size:0.85rem;padding:10px 18px;">
-          ✓ J'ai déjà payé mon adhésion → accéder à la commande
-        </button>
-      </div>
-    </div>
-  </div>
+<div style="text-align:center;margin-top:20px;">
+<button class="btn btn-secondary" onclick="goToScreen(2)" style="font-size:0.85rem;padding:10px 18px;">
+✓ J'ai déjà payé mon adhésion → accéder à la commande
+</button>
+</div>
+</div>
+</div>
 </div>
 
 <!-- ===== ÉCRAN 2 : QUESTIONNAIRE ===== -->
 <div class="screen" id="screen2">
-  <div class="screen-inner">
-    <div class="card">
-      <div class="card-title">Vos enfants au collège</div>
-      <div class="card-subtitle">Ces informations nous permettent de pré-remplir les quantités conseillées pour chaque classe.</div>
+<div class="screen-inner">
+<div class="card">
+<div class="card-title">Vos enfants au collège</div>
+<div class="card-subtitle">Ces informations nous permettent de pré-remplir les quantités conseillées pour chaque classe.</div>
 
-      <!-- COORDONNÉES PARENT -->
-      <div class="form-group">
-        <label class="form-label" style="margin-bottom:16px;">
-          <span>👤</span>
-          Vos coordonnées
-        </label>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:480px;">
-          <div>
-            <label style="font-size:0.85rem;font-weight:700;color:var(--fcpe-blue);display:block;margin-bottom:6px;">Nom *</label>
-            <input type="text" id="parent-nom" placeholder="Dupont" required
-              style="width:100%;padding:10px 14px;border:2px solid var(--border);border-radius:8px;font-family:'Lato',sans-serif;font-size:0.95rem;">
-          </div>
-          <div>
-            <label style="font-size:0.85rem;font-weight:700;color:var(--fcpe-blue);display:block;margin-bottom:6px;">Prénom *</label>
-            <input type="text" id="parent-prenom" placeholder="Marie" required
-              style="width:100%;padding:10px 14px;border:2px solid var(--border);border-radius:8px;font-family:'Lato',sans-serif;font-size:0.95rem;">
-          </div>
-          <div>
-            <label style="font-size:0.85rem;font-weight:700;color:var(--fcpe-blue);display:block;margin-bottom:6px;">Email *</label>
-            <input type="email" id="parent-email" placeholder="marie.dupont@email.com" required
-              style="width:100%;padding:10px 14px;border:2px solid var(--border);border-radius:8px;font-family:'Lato',sans-serif;font-size:0.95rem;">
-          </div>
-          <div>
-            <label style="font-size:0.85rem;font-weight:700;color:var(--fcpe-blue);display:block;margin-bottom:6px;">Téléphone *</label>
-            <input type="tel" id="parent-tel" placeholder="06 12 34 56 78" required
-              style="width:100%;padding:10px 14px;border:2px solid var(--border);border-radius:8px;font-family:'Lato',sans-serif;font-size:0.95rem;">
-          </div>
-        </div>
-      </div>
+<!-- COORDONNÉES PARENT -->
+<div class="form-group">
+<label class="form-label" style="margin-bottom:16px;">
+<span>👤</span>
+Vos coordonnées
+</label>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:480px;">
+<div>
+<label style="font-size:0.85rem;font-weight:700;color:var(--fcpe-blue);display:block;margin-bottom:6px;">Nom *</label>
+<input type="text" id="parent-nom" placeholder="Dupont" required
+style="width:100%;padding:10px 14px;border:2px solid var(--border);border-radius:8px;font-family:'Lato',sans-serif;font-size:0.95rem;">
+</div>
+<div>
+<label style="font-size:0.85rem;font-weight:700;color:var(--fcpe-blue);display:block;margin-bottom:6px;">Prénom *</label>
+<input type="text" id="parent-prenom" placeholder="Marie" required
+style="width:100%;padding:10px 14px;border:2px solid var(--border);border-radius:8px;font-family:'Lato',sans-serif;font-size:0.95rem;">
+</div>
+<div>
+<label style="font-size:0.85rem;font-weight:700;color:var(--fcpe-blue);display:block;margin-bottom:6px;">Email *</label>
+<input type="email" id="parent-email" placeholder="marie.dupont@email.com" required
+style="width:100%;padding:10px 14px;border:2px solid var(--border);border-radius:8px;font-family:'Lato',sans-serif;font-size:0.95rem;">
+</div>
+<div>
+<label style="font-size:0.85rem;font-weight:700;color:var(--fcpe-blue);display:block;margin-bottom:6px;">Téléphone *</label>
+<input type="tel" id="parent-tel" placeholder="06 12 34 56 78" required
+style="width:100%;padding:10px 14px;border:2px solid var(--border);border-radius:8px;font-family:'Lato',sans-serif;font-size:0.95rem;">
+</div>
+</div>
+</div>
 
-      <!-- Q1 -->
-      <div class="form-group">
-        <label class="form-label">
-          <span>1</span>
-          Combien d'enfants avez-vous au collège ?
-        </label>
-        <select class="form-select" id="nb-children" onchange="updateChildrenClasses()">
-          <option value="">— Choisissez —</option>
-          <option value="1">1 enfant</option>
-          <option value="2">2 enfants</option>
-          <option value="3">3 enfants</option>
-          <option value="4">4 enfants</option>
-        </select>
-      </div>
+<!-- Q1 -->
+<div class="form-group">
+<label class="form-label">
+<span>1</span>
+Combien d'enfants avez-vous au collège ?
+</label>
+<select class="form-select" id="nb-children" onchange="updateChildrenClasses()">
+<option value="">— Choisissez —</option>
+<option value="1">1 enfant</option>
+<option value="2">2 enfants</option>
+<option value="3">3 enfants</option>
+<option value="4">4 enfants</option>
+</select>
+</div>
 
-      <!-- Q2 -->
-      <div class="form-group">
-        <label class="form-label">
-          <span>2</span>
-          Dans quelle(s) classe(s) ?
-        </label>
-        <div id="children-classes-detail">
-          <p style="color:var(--text-light);font-size:0.9rem;">← Sélectionnez d'abord le nombre d'enfants</p>
-        </div>
-      </div>
+<!-- Q2 -->
+<div class="form-group">
+<label class="form-label">
+<span>2</span>
+Dans quelle(s) classe(s) ?
+</label>
+<div id="children-classes-detail">
+<p style="color:var(--text-light);font-size:0.9rem;">← Sélectionnez d'abord le nombre d'enfants</p>
+</div>
+</div>
 
-      <div class="btn-row">
-        <button class="btn btn-secondary" onclick="goToScreen(1)">← Retour</button>
-        <button class="btn btn-primary btn-large" onclick="validateAndBuildForm()">
-          Voir ma commande →
-        </button>
-      </div>
-    </div>
-  </div>
+<div class="btn-row">
+<button class="btn btn-secondary" onclick="goToScreen(1)">← Retour</button>
+<button class="btn btn-primary btn-large" onclick="validateAndBuildForm()">
+Voir ma commande →
+</button>
+</div>
+</div>
+</div>
 </div>
 
 <!-- ===== ÉCRAN 3 : FORMULAIRE ===== -->
 <div class="screen" id="screen3">
-  <div class="screen-inner-wide">
+<div class="screen-inner-wide">
 
-    <!-- ALERTE ROUGE -->
-    <div class="alert-red">
-      <div class="alert-title">⚠️ Informations importantes sur cette liste</div>
-      <p style="font-size:0.88rem;color:#7a1a1a;margin-bottom:8px;">
-        La liste ci-dessous correspond à la demande du collège avec les quantités conseillées <strong>MAIS ne sont pas fournis :</strong>
-      </p>
-      <ul>
-        <li>L'écouteur filaire ou casque <em>(trop personnel)</em></li>
-        <li>La blouse blanche au nom/prénom de l'élève <em>(pour éviter les éventuels problèmes de taille)</em></li>
-        <li>Le cahier d'écriture chinoise</li>
-        <li>Le stylo correcteur blanc fin <em>(considéré comme toxique par les fournisseurs)</em></li>
-        <li>Le protège-document <em>(inutile compte tenu de la matière des cahiers & classeurs)</em></li>
-        <li>Les enveloppes</li>
-      </ul>
-      <div class="alert-note">
-        ✏️ <strong>Pensez bien à vérifier que vous n'avez pas déjà certains articles des années précédentes</strong>, auquel cas sélectionnez 0.<br>
-        🌍 <strong>Si vos enfants ne sont plus en 6ème</strong>, choisissez des articles pour le <u>chinois OU l'espagnol</u>, mais pas les deux à la fois, car votre enfant fait l'une OU l'autre de ces matières.
-      </div>
-    </div>
+<!-- ALERTE ROUGE -->
+<div class="alert-red">
+<div class="alert-title">⚠️ Informations importantes sur cette liste</div>
+<p style="font-size:0.88rem;color:#7a1a1a;margin-bottom:8px;">
+La liste ci-dessous correspond à la demande du collège avec les quantités conseillées <strong>MAIS ne sont pas fournis :</strong>
+</p>
+<ul>
+<li>L'écouteur filaire ou casque <em>(trop personnel)</em></li>
+<li>La blouse blanche au nom/prénom de l'élève <em>(pour éviter les éventuels problèmes de taille)</em></li>
+<li>Le cahier d'écriture chinoise</li>
+<li>Le stylo correcteur blanc fin <em>(considéré comme toxique par les fournisseurs)</em></li>
+<li>Le protège-document <em>(inutile compte tenu de la matière des cahiers & classeurs)</em></li>
+<li>Les enveloppes</li>
+</ul>
+<div class="alert-note">
+✏️ <strong>Pensez bien à vérifier que vous n'avez pas déjà certains articles des années précédentes</strong>, auquel cas sélectionnez 0.<br>
+🌍 <strong>Si vos enfants ne sont plus en 6ème</strong>, choisissez des articles pour le <u>chinois OU l'espagnol</u>, mais pas les deux à la fois, car votre enfant fait l'une OU l'autre de ces matières.
+</div>
+</div>
 
-    <!-- TABLEAU COMMANDE généré dynamiquement -->
-    <div id="order-table"></div>
+<!-- TABLEAU COMMANDE généré dynamiquement -->
+<div id="order-table"></div>
 
-    <!-- TOTAL -->
-    <div class="total-block">
-      <div class="total-label">💶 Total de votre commande</div>
-      <div class="total-amount" id="grand-total">0,00 €</div>
-    </div>
+<!-- TOTAL -->
+<div class="total-block">
+<div class="total-label">💶 Total de votre commande</div>
+<div class="total-amount" id="grand-total">0,00 €</div>
+</div>
 
-    <div class="bottom-actions">
-      <button class="btn btn-secondary" onclick="goToScreen(2)">← Retour</button>
-      <button class="btn btn-success btn-large" onclick="submitOrder()">
-        💳 Procéder au paiement →
-      </button>
-    </div>
-  </div>
+<div class="bottom-actions">
+<button class="btn btn-secondary" onclick="goToScreen(2)">← Retour</button>
+<button class="btn btn-success btn-large" onclick="submitOrder()">
+💳 Procéder au paiement →
+</button>
+</div>
+</div>
 </div>
 
 <!-- ===== ÉCRAN 4 : PAIEMENT ===== -->
 <div class="screen" id="screen4">
-  <div class="screen-inner">
-    <div class="card" style="text-align:center;">
-      <div style="font-size:3.5rem;margin-bottom:16px;">🛒</div>
-      <div class="card-title" style="text-align:center;">Récapitulatif & Paiement</div>
-      <div class="card-subtitle" style="text-align:center;">
-        Votre commande a bien été enregistrée. Vous allez être redirigé vers HelloAsso pour finaliser votre paiement en toute sécurité.
-      </div>
+<div class="screen-inner">
+<div class="card" style="text-align:center;">
+<div style="font-size:3.5rem;margin-bottom:16px;">🛒</div>
+<div class="card-title" style="text-align:center;">Récapitulatif & Paiement</div>
+<div class="card-subtitle" style="text-align:center;">
+Votre commande a bien été enregistrée. Vous allez être redirigé vers HelloAsso pour finaliser votre paiement en toute sécurité.
+</div>
 
-      <div style="background:var(--light-bg);border-radius:10px;padding:20px 24px;margin:20px 0;text-align:left;">
-        <div style="font-family:'Nunito',sans-serif;font-weight:800;font-size:0.9rem;color:var(--text-light);margin-bottom:14px;text-transform:uppercase;letter-spacing:0.05em;">Récapitulatif</div>
-        <div id="payment-summary"></div>
-      </div>
+<div style="background:var(--light-bg);border-radius:10px;padding:20px 24px;margin:20px 0;text-align:left;">
+<div style="font-family:'Nunito',sans-serif;font-weight:800;font-size:0.9rem;color:var(--text-light);margin-bottom:14px;text-transform:uppercase;letter-spacing:0.05em;">Récapitulatif</div>
+<div id="payment-summary"></div>
+</div>
 
-      <!-- TOTAL BIEN VISIBLE -->
-      <div style="background:#fff3cd;border:3px solid #f5c400;border-radius:12px;padding:20px 24px;margin:0 0 16px;text-align:center;">
-        <div style="font-family:'Nunito',sans-serif;font-weight:800;font-size:1rem;color:#856404;margin-bottom:8px;">
-          ⚠️ MONTANT À NOTER AVANT DE PASSER AU PAIEMENT
-        </div>
-        <div style="font-family:'Nunito',sans-serif;font-weight:900;font-size:3rem;color:#c8102e;line-height:1;" id="payment-total-big">0,00 €</div>
-        <div style="font-size:0.85rem;color:#856404;margin-top:8px;font-weight:600;">
-          👉 Vous devrez saisir <strong>ce montant exact</strong> sur HelloAsso lors du paiement.<br>
-          HelloAsso s'ouvrira dans un nouvel onglet — gardez cette page ouverte pour vous y référer.
-        </div>
-      </div>
+<!-- TOTAL BIEN VISIBLE -->
+<div style="background:#fff3cd;border:3px solid #f5c400;border-radius:12px;padding:20px 24px;margin:0 0 16px;text-align:center;">
+<div style="font-family:'Nunito',sans-serif;font-weight:800;font-size:1rem;color:#856404;margin-bottom:8px;">
+⚠️ MONTANT À NOTER AVANT DE PASSER AU PAIEMENT
+</div>
+<div style="font-family:'Nunito',sans-serif;font-weight:900;font-size:3rem;color:#c8102e;line-height:1;" id="payment-total-big">0,00 €</div>
+<div style="font-size:0.85rem;color:#856404;margin-top:8px;font-weight:600;">
+👉 Vous devrez saisir <strong>ce montant exact</strong> sur HelloAsso lors du paiement.<br>
+HelloAsso s'ouvrira dans un nouvel onglet — gardez cette page ouverte pour vous y référer.
+</div>
+</div>
 
-      <div class="total-block" style="margin:0 0 24px;">
-        <div class="total-label">💶 Total de votre commande</div>
-        <div class="total-amount" id="payment-total">0,00 €</div>
-      </div>
+<div class="total-block" style="margin:0 0 24px;">
+<div class="total-label">💶 Total de votre commande</div>
+<div class="total-amount" id="payment-total">0,00 €</div>
+</div>
 
-      <a href="https://www.helloasso.com/associations/conseil-local-fcpe-college-de-l-estey/adhesions/adhesion-fcpe-2026-2027-college-de-l-estey" target="_blank" class="btn btn-success btn-large" style="width:100%;justify-content:center;font-size:1.1rem;">
-        💳 Payer sur HelloAsso → (nouvel onglet)
-      </a>
-      <p style="text-align:center;font-size:0.82rem;color:var(--text-light);margin-top:10px;">
-        ↗️ HelloAsso s'ouvre dans un nouvel onglet — cette page reste accessible pour voir votre total.
-      </p>
+<a href="https://www.helloasso.com/associations/conseil-local-fcpe-college-de-l-estey/boutiques/fournitures-scolaires-2026-2027" target="_blank" class="btn btn-success btn-large" style="width:100%;justify-content:center;font-size:1.1rem;">
+💳 Payer sur HelloAsso → (nouvel onglet)
+</a>
+<p style="text-align:center;font-size:0.82rem;color:var(--text-light);margin-top:10px;">
+↗️ HelloAsso s'ouvre dans un nouvel onglet — cette page reste accessible pour voir votre total.
+</p>
 
-      <div class="btn-row" style="justify-content:center;margin-top:16px;">
-        <button class="btn btn-secondary" onclick="goToScreen(3)">← Modifier ma commande</button>
-      </div>
-    </div>
-  </div>
+<div class="btn-row" style="justify-content:center;margin-top:16px;">
+<button class="btn btn-secondary" onclick="goToScreen(3)">← Modifier ma commande</button>
+</div>
+</div>
+</div>
 </div>
 
 <script>
@@ -779,73 +779,73 @@
 // DONNÉES ARTICLES
 // =====================
 const ITEMS = [
-  // BASE
-  { theme:"BASE", name:"Pack 12 crayons de couleur", q6:1, q5:1, q4:1, q3:1, price:1.39 },
-  { theme:"BASE", name:"Pack 12 feutres de couleur", q6:1, q5:1, q4:1, q3:1, price:3.95 },
-  { theme:"BASE", name:"Crayons à papier HB (x4)", q6:4, q5:4, q4:4, q3:4, price:0.12 },
-  { theme:"BASE", name:"Pack Stylos à bille — noir/bleu/rouge/vert", q6:1, q5:1, q4:1, q3:1, price:0.20 },
-  { theme:"BASE", name:"Gomme blanche", q6:1, q5:1, q4:1, q3:1, price:0.27 },
-  { theme:"BASE", name:"Taille-crayon avec réservoir", q6:1, q5:1, q4:1, q3:1, price:0.60 },
-  { theme:"BASE", name:"Ruban adhésif cristal", q6:1, q5:1, q4:1, q3:1, price:0.68 },
-  { theme:"BASE", name:"Ciseaux", q6:1, q5:1, q4:1, q3:1, price:2.08 },
-  { theme:"BASE", name:"Colle en bâton", q6:1, q5:1, q4:1, q3:1, price:0.32 },
-  { theme:"BASE", name:"1 sachet œillets pour classeur", q6:1, q5:1, q4:1, q3:1, price:0.72 },
-  { theme:"BASE", name:"Pack papier transparent pour recouvrir les livres", q6:1, q5:1, q4:1, q3:1, price:2.43 },
-  { theme:"BASE", name:"Lot de 4 surligneurs", q6:1, q5:1, q4:1, q3:1, price:2.12 },
-  { theme:"BASE", name:"1 ardoise type Velleda", q6:1, q5:1, q4:1, q3:1, price:2.04 },
-  { theme:"BASE", name:"Feutres pour ardoise (x2)", q6:2, q5:2, q4:2, q3:2, price:0.55 },
-  { theme:"BASE", name:"1 brosse pour ardoise", q6:1, q5:1, q4:1, q3:1, price:1.88 },
-  { theme:"BASE", name:"Cahier de brouillon", q6:1, q5:1, q4:1, q3:1, price:0.33 },
-  { theme:"BASE", name:"100 feuilles simples perforées grand format grands carreaux", q6:1, q5:1, q4:1, q3:1, price:2.60 },
-  { theme:"BASE", name:"100 feuilles doubles perforées grand format grands carreaux", q6:1, q5:1, q4:1, q3:1, price:2.41 },
-  { theme:"BASE", name:"Correcteur à bandes", q6:1, q5:1, q4:1, q3:1, price:1.42 },
-  { theme:"BASE", name:"Calculatrice Casio FX92+ <em style='font-size:0.8em;color:#888'>(6ème uniquement — mettre 0 si déjà possédée)</em>", q6:1, q5:0, q4:0, q3:0, price:16.49 },
-  { theme:"BASE", name:"Clé USB 8Go <em style='font-size:0.8em;color:#888'>(6ème uniquement — mettre 0 si déjà possédée)</em>", q6:1, q5:0, q4:0, q3:0, price:5.05 },
-  // FRANÇAIS
-  { theme:"FRANÇAIS", name:"Cahier de grammaire 6ème <small style='color:#888'>ISBN 978-2-401-11586-6 / code 5068880</small>", q6:1, q5:0, q4:0, q3:0, price:6.50 },
-  { theme:"FRANÇAIS", name:"Cahier de grammaire 5ème <small style='color:#888'>ISBN 978-2-401-12132-4 / code 4344536</small>", q6:0, q5:1, q4:0, q3:0, price:6.60 },
-  { theme:"FRANÇAIS", name:"Dictionnaire Le Robert Collège", q6:0, q5:0, q4:0, q3:0, price:22.75 },
-  // MATH
-  { theme:"MATHÉMATIQUES", name:"Cahiers 24x32 — 48 pages — grands carreaux (x3)", q6:3, q5:3, q4:3, q3:3, price:0.91 },
-  { theme:"MATHÉMATIQUES", name:"Règle graduée 30cm", q6:1, q5:1, q4:1, q3:1, price:0.35 },
-  { theme:"MATHÉMATIQUES", name:"Équerre", q6:1, q5:1, q4:1, q3:1, price:0.22 },
-  { theme:"MATHÉMATIQUES", name:"Compas à bague", q6:1, q5:1, q4:1, q3:1, price:1.87 },
-  { theme:"MATHÉMATIQUES", name:"Rapporteur en plastique transparent", q6:1, q5:1, q4:1, q3:1, price:0.22 },
-  { theme:"MATHÉMATIQUES", name:"Stylo mine (porte-mines)", q6:1, q5:1, q4:1, q3:1, price:1.19 },
-  // TECHNO
-  { theme:"TECHNO (pas en 6ème)", name:"Classeur souple grand format", q6:0, q5:1, q4:1, q3:1, price:2.04 },
-  { theme:"TECHNO (pas en 6ème)", name:"Intercalaires (x3)", q6:0, q5:3, q4:3, q3:3, price:null, textInfo:"Partagés avec SVT & Langues antiques" },
-  // SVT
-  { theme:"SVT", name:"Classeur dur grand format", q6:1, q5:1, q4:1, q3:1, price:2.04 },
-  { theme:"SVT", name:"Intercalaires SVT", q6:3, q5:4, q4:4, q3:4, price:null, textInfo:"Partagés avec Techno & Langues antiques" },
-  { theme:"SVT", name:"Pack pochettes plastiques (50)", q6:1, q5:0, q4:0, q3:0, price:5.47 },
-  // PHYSIQUE-CHIMIE
-  { theme:"PHYSIQUE-CHIMIE", name:"Cahier 24x32 — 96 pages — grands carreaux", q6:1, q5:1, q4:1, q3:1, price:1.60 },
-  { theme:"PHYSIQUE-CHIMIE", name:"Pochettes de classeur (x2)", q6:2, q5:2, q4:2, q3:2, price:null, textInfo:"Voir pochettes plastiques" },
-  // HISTOIRE-GÉO
-  { theme:"HISTOIRE-GÉOGRAPHIE", name:"Cahiers 24x32 — 96 pages — grands carreaux (x3)", q6:3, q5:3, q4:3, q3:3, price:1.60 },
-  // ANGLAIS
-  { theme:"ANGLAIS", name:"Cahiers 24x32 — 96 pages — grands carreaux (x2)", q6:2, q5:2, q4:2, q3:2, price:1.60 },
-  // CULTURE ANGLAIS
-  { theme:"CULTURE ANGLAIS (4ème & 3ème)", name:"Cahier 24x32 avec pochette à la fin", q6:0, q5:0, q4:1, q3:1, price:3.35 },
-  // ESPAGNOL
-  { theme:"ESPAGNOL (pas en 6ème — ou chinois, pas les deux)", name:"Cahiers 24x32 — 96 pages — grands carreaux (x2)", q6:0, q5:2, q4:2, q3:2, price:1.60 },
-  // CHINOIS
-  { theme:"CHINOIS (pas en 6ème — ou espagnol, pas les deux)", name:"Cahier 24x32 — 96 pages — grands carreaux", q6:0, q5:1, q4:1, q3:1, price:1.60 },
-  // LANGUES ANTIQUES
-  { theme:"LANGUES ANTIQUES (pas en 6ème)", name:"Classeur souple", q6:0, q5:1, q4:1, q3:1, price:2.04 },
-  { theme:"LANGUES ANTIQUES (pas en 6ème)", name:"Intercalaires (x3)", q6:0, q5:3, q4:3, q3:3, price:null, textInfo:"Partagés avec Techno & SVT" },
-  // MUSIQUE
-  { theme:"MUSIQUE", name:"Porte-vues épais", q6:1, q5:1, q4:1, q3:1, price:2.82 },
-  // ARTS PLASTIQUES
-  { theme:"ARTS PLASTIQUES", name:"Pochette de papier dessin à grain — 21x29,7 — 180g/m²", q6:1, q5:1, q4:1, q3:1, price:1.94 },
-  { theme:"ARTS PLASTIQUES", name:"Crayon à papier 6B ou 8B", q6:1, q5:1, q4:1, q3:1, price:0.85 },
-  { theme:"ARTS PLASTIQUES", name:"Feutre noir mine moyenne Papermate", q6:1, q5:1, q4:1, q3:1, price:1.60 },
-  { theme:"ARTS PLASTIQUES", name:"Marker noir pointe large", q6:1, q5:1, q4:1, q3:1, price:1.14 },
-  { theme:"ARTS PLASTIQUES", name:"Lot de 5 tubes de gouache 10mL (jaune/rouge/bleu/blanc/noir)", q6:1, q5:1, q4:1, q3:1, price:1.90 },
-  { theme:"ARTS PLASTIQUES", name:"Lot de 3 pinceaux souples n°6-10-14 ou 4-10-16", q6:1, q5:1, q4:1, q3:1, price:1.44 },
-  { theme:"ARTS PLASTIQUES", name:"Protège-cahier plastifié transparent 21x29,7", q6:1, q5:1, q4:1, q3:1, price:0.77 },
-  { theme:"ARTS PLASTIQUES", name:"Cahier TP piqué 21x29,7 — 120p <em style='font-size:0.8em;color:#888'>(6ème uniquement — à conserver tout le collège)</em>", q6:1, q5:0, q4:0, q3:0, price:2.03 },
+// BASE
+{ theme:"BASE", name:"Pack 12 crayons de couleur", q6:1, q5:1, q4:1, q3:1, price:1.39 },
+{ theme:"BASE", name:"Pack 12 feutres de couleur", q6:1, q5:1, q4:1, q3:1, price:3.95 },
+{ theme:"BASE", name:"Crayons à papier HB (x4)", q6:4, q5:4, q4:4, q3:4, price:0.12 },
+{ theme:"BASE", name:"Pack Stylos à bille — noir/bleu/rouge/vert", q6:1, q5:1, q4:1, q3:1, price:0.20 },
+{ theme:"BASE", name:"Gomme blanche", q6:1, q5:1, q4:1, q3:1, price:0.27 },
+{ theme:"BASE", name:"Taille-crayon avec réservoir", q6:1, q5:1, q4:1, q3:1, price:0.60 },
+{ theme:"BASE", name:"Ruban adhésif cristal", q6:1, q5:1, q4:1, q3:1, price:0.68 },
+{ theme:"BASE", name:"Ciseaux", q6:1, q5:1, q4:1, q3:1, price:2.08 },
+{ theme:"BASE", name:"Colle en bâton", q6:1, q5:1, q4:1, q3:1, price:0.32 },
+{ theme:"BASE", name:"1 sachet œillets pour classeur", q6:1, q5:1, q4:1, q3:1, price:0.72 },
+{ theme:"BASE", name:"Pack papier transparent pour recouvrir les livres", q6:1, q5:1, q4:1, q3:1, price:2.43 },
+{ theme:"BASE", name:"Lot de 4 surligneurs", q6:1, q5:1, q4:1, q3:1, price:2.12 },
+{ theme:"BASE", name:"1 ardoise type Velleda", q6:1, q5:1, q4:1, q3:1, price:2.04 },
+{ theme:"BASE", name:"Feutres pour ardoise (x2)", q6:2, q5:2, q4:2, q3:2, price:0.55 },
+{ theme:"BASE", name:"1 brosse pour ardoise", q6:1, q5:1, q4:1, q3:1, price:1.88 },
+{ theme:"BASE", name:"Cahier de brouillon", q6:1, q5:1, q4:1, q3:1, price:0.33 },
+{ theme:"BASE", name:"100 feuilles simples perforées grand format grands carreaux", q6:1, q5:1, q4:1, q3:1, price:2.60 },
+{ theme:"BASE", name:"100 feuilles doubles perforées grand format grands carreaux", q6:1, q5:1, q4:1, q3:1, price:2.41 },
+{ theme:"BASE", name:"Correcteur à bandes", q6:1, q5:1, q4:1, q3:1, price:1.42 },
+{ theme:"BASE", name:"Calculatrice Casio FX92+ <em style='font-size:0.8em;color:#888'>(6ème uniquement — mettre 0 si déjà possédée)</em>", q6:1, q5:0, q4:0, q3:0, price:16.49 },
+{ theme:"BASE", name:"Clé USB 8Go <em style='font-size:0.8em;color:#888'>(6ème uniquement — mettre 0 si déjà possédée)</em>", q6:1, q5:0, q4:0, q3:0, price:5.05 },
+// FRANÇAIS
+{ theme:"FRANÇAIS", name:"Cahier de grammaire 6ème <small style='color:#888'>ISBN 978-2-401-11586-6 / code 5068880</small>", q6:1, q5:0, q4:0, q3:0, price:6.50 },
+{ theme:"FRANÇAIS", name:"Cahier de grammaire 5ème <small style='color:#888'>ISBN 978-2-401-12132-4 / code 4344536</small>", q6:0, q5:1, q4:0, q3:0, price:6.60 },
+{ theme:"FRANÇAIS", name:"Dictionnaire Le Robert Collège", q6:0, q5:0, q4:0, q3:0, price:22.75 },
+// MATH
+{ theme:"MATHÉMATIQUES", name:"Cahiers 24x32 — 48 pages — grands carreaux (x3)", q6:3, q5:3, q4:3, q3:3, price:0.91 },
+{ theme:"MATHÉMATIQUES", name:"Règle graduée 30cm", q6:1, q5:1, q4:1, q3:1, price:0.35 },
+{ theme:"MATHÉMATIQUES", name:"Équerre", q6:1, q5:1, q4:1, q3:1, price:0.22 },
+{ theme:"MATHÉMATIQUES", name:"Compas à bague", q6:1, q5:1, q4:1, q3:1, price:1.87 },
+{ theme:"MATHÉMATIQUES", name:"Rapporteur en plastique transparent", q6:1, q5:1, q4:1, q3:1, price:0.22 },
+{ theme:"MATHÉMATIQUES", name:"Stylo mine (porte-mines)", q6:1, q5:1, q4:1, q3:1, price:1.19 },
+// TECHNO
+{ theme:"TECHNO (pas en 6ème)", name:"Classeur souple grand format", q6:0, q5:1, q4:1, q3:1, price:2.04 },
+{ theme:"TECHNO (pas en 6ème)", name:"Intercalaires (x3)", q6:0, q5:3, q4:3, q3:3, price:null, textInfo:"Partagés avec SVT & Langues antiques" },
+// SVT
+{ theme:"SVT", name:"Classeur dur grand format", q6:1, q5:1, q4:1, q3:1, price:2.04 },
+{ theme:"SVT", name:"Jeu de 12 onglets intercalaires <em style='font-size:0.8em;color:#888'>(partagés avec Techno & Langues antiques — un seul lot suffit)</em>", q6:3, q5:4, q4:4, q3:4, price:1.69 },
+{ theme:"SVT", name:"Pack pochettes plastiques (50)", q6:1, q5:0, q4:0, q3:0, price:5.47 },
+// PHYSIQUE-CHIMIE
+{ theme:"PHYSIQUE-CHIMIE", name:"Cahier 24x32 — 96 pages — grands carreaux", q6:1, q5:1, q4:1, q3:1, price:1.60 },
+{ theme:"PHYSIQUE-CHIMIE", name:"Pochettes de classeur (x2)", q6:2, q5:2, q4:2, q3:2, price:null, textInfo:"Voir pochettes plastiques" },
+// HISTOIRE-GÉO
+{ theme:"HISTOIRE-GÉOGRAPHIE", name:"Cahiers 24x32 — 96 pages — grands carreaux (x3)", q6:3, q5:3, q4:3, q3:3, price:1.60 },
+// ANGLAIS
+{ theme:"ANGLAIS", name:"Cahiers 24x32 — 96 pages — grands carreaux (x2)", q6:2, q5:2, q4:2, q3:2, price:1.60 },
+// CULTURE ANGLAIS
+{ theme:"CULTURE ANGLAIS (4ème & 3ème)", name:"Cahier 24x32 avec pochette à la fin", q6:0, q5:0, q4:1, q3:1, price:3.35 },
+// ESPAGNOL
+{ theme:"ESPAGNOL (pas en 6ème — ou chinois, pas les deux)", name:"Cahiers 24x32 — 96 pages — grands carreaux (x2)", q6:0, q5:2, q4:2, q3:2, price:1.60 },
+// CHINOIS
+{ theme:"CHINOIS (pas en 6ème — ou espagnol, pas les deux)", name:"Cahier 24x32 — 96 pages — grands carreaux", q6:0, q5:1, q4:1, q3:1, price:1.60 },
+// LANGUES ANTIQUES
+{ theme:"LANGUES ANTIQUES (pas en 6ème)", name:"Classeur souple", q6:0, q5:1, q4:1, q3:1, price:2.04 },
+{ theme:"LANGUES ANTIQUES (pas en 6ème)", name:"Intercalaires (x3)", q6:0, q5:3, q4:3, q3:3, price:null, textInfo:"Partagés avec Techno & SVT" },
+// MUSIQUE
+{ theme:"MUSIQUE", name:"Porte-vues épais", q6:1, q5:1, q4:1, q3:1, price:2.82 },
+// ARTS PLASTIQUES
+{ theme:"ARTS PLASTIQUES", name:"Pochette de papier dessin à grain — 21x29,7 — 180g/m²", q6:1, q5:1, q4:1, q3:1, price:1.94 },
+{ theme:"ARTS PLASTIQUES", name:"Crayon à papier 6B ou 8B", q6:1, q5:1, q4:1, q3:1, price:0.85 },
+{ theme:"ARTS PLASTIQUES", name:"Feutre noir mine moyenne Papermate", q6:1, q5:1, q4:1, q3:1, price:1.60 },
+{ theme:"ARTS PLASTIQUES", name:"Marker noir pointe large", q6:1, q5:1, q4:1, q3:1, price:1.14 },
+{ theme:"ARTS PLASTIQUES", name:"Lot de 5 tubes de gouache 10mL (jaune/rouge/bleu/blanc/noir)", q6:1, q5:1, q4:1, q3:1, price:1.90 },
+{ theme:"ARTS PLASTIQUES", name:"Lot de 3 pinceaux souples n°6-10-14 ou 4-10-16", q6:1, q5:1, q4:1, q3:1, price:1.44 },
+{ theme:"ARTS PLASTIQUES", name:"Protège-cahier plastifié transparent 21x29,7", q6:1, q5:1, q4:1, q3:1, price:0.77 },
+{ theme:"ARTS PLASTIQUES", name:"Cahier TP piqué 21x29,7 — 120p <em style='font-size:0.8em;color:#888'>(6ème uniquement — à conserver tout le collège)</em>", q6:1, q5:0, q4:0, q3:0, price:2.03 },
 ];
 
 // =====================
@@ -854,318 +854,318 @@ const ITEMS = [
 let state = { nbChildren: 0, classes: [] };
 
 function goToScreen(n) {
-  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-  document.getElementById('screen' + n).classList.add('active');
-  // Update steps
-  for(let i=1;i<=4;i++){
-    const ind = document.getElementById('step'+i+'-indicator');
-    ind.classList.remove('active','done');
-    if(i === n) ind.classList.add('active');
-    else if(i < n) ind.classList.add('done');
-  }
-  window.scrollTo(0, 0);
-  if(n === 4) buildPaymentSummary();
+document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+document.getElementById('screen' + n).classList.add('active');
+// Update steps
+for(let i=1;i<=4;i++){
+const ind = document.getElementById('step'+i+'-indicator');
+ind.classList.remove('active','done');
+if(i === n) ind.classList.add('active');
+else if(i < n) ind.classList.add('done');
+}
+window.scrollTo(0, 0);
+if(n === 4) buildPaymentSummary();
 }
 
 // =====================
 // ÉCRAN 2
 // =====================
 function updateChildrenClasses() {
-  const nb = parseInt(document.getElementById('nb-children').value) || 0;
-  state.nbChildren = nb;
-  const container = document.getElementById('children-classes-detail');
+const nb = parseInt(document.getElementById('nb-children').value) || 0;
+state.nbChildren = nb;
+const container = document.getElementById('children-classes-detail');
 
-  if(!nb) {
-    container.innerHTML = '<p style="color:var(--text-light);font-size:0.9rem;">← Sélectionnez d\'abord le nombre d\'enfants</p>';
-    return;
-  }
+if(!nb) {
+container.innerHTML = '<p style="color:var(--text-light);font-size:0.9rem;">← Sélectionnez d\'abord le nombre d\'enfants</p>';
+return;
+}
 
-  const classOptions = [
-    { value:'6e', label:'6ème' },
-    { value:'5e', label:'5ème' },
-    { value:'4e', label:'4ème' },
-    { value:'3e', label:'3ème' },
-  ];
+const classOptions = [
+{ value:'6e', label:'6ème' },
+{ value:'5e', label:'5ème' },
+{ value:'4e', label:'4ème' },
+{ value:'3e', label:'3ème' },
+];
 
-  let html = '';
-  if(nb === 1) {
-    html = '<p style="font-family:\'Nunito\',sans-serif;font-weight:700;font-size:0.9rem;color:var(--fcpe-blue);margin-bottom:10px;">Dans quelle classe est votre enfant ?</p>';
-    html += '<div class="classes-grid">';
-    classOptions.forEach(c => {
-      html += `<label class="class-checkbox" id="cb-0-${c.value}" onclick="toggleClass(0,'${c.value}',this)">
-        <input type="checkbox" value="${c.value}">
-        <div class="check-icon"></div>
-        ${c.label}
-      </label>`;
-    });
-    html += '</div>';
-  } else {
-    for(let i=0;i<nb;i++){
-      html += `<div class="child-row">
-        <label>Enfant ${i+1}</label>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;">`;
-      classOptions.forEach(c => {
-        html += `<label class="class-checkbox" id="cb-${i}-${c.value}" onclick="toggleClass(${i},'${c.value}',this)" style="padding:10px 14px;font-size:0.9rem;">
-          <input type="checkbox" value="${c.value}">
-          <div class="check-icon" style="width:18px;height:18px;font-size:0.7rem;"></div>
-          ${c.label}
-        </label>`;
-      });
-      html += `</div></div>`;
-    }
-  }
+let html = '';
+if(nb === 1) {
+html = '<p style="font-family:\'Nunito\',sans-serif;font-weight:700;font-size:0.9rem;color:var(--fcpe-blue);margin-bottom:10px;">Dans quelle classe est votre enfant ?</p>';
+html += '<div class="classes-grid">';
+classOptions.forEach(c => {
+html += `<label class="class-checkbox" id="cb-0-${c.value}" onclick="toggleClass(0,'${c.value}',this)">
+<input type="checkbox" value="${c.value}">
+<div class="check-icon"></div>
+${c.label}
+</label>`;
+});
+html += '</div>';
+} else {
+for(let i=0;i<nb;i++){
+html += `<div class="child-row">
+<label>Enfant ${i+1}</label>
+<div style="display:flex;gap:8px;flex-wrap:wrap;">`;
+classOptions.forEach(c => {
+html += `<label class="class-checkbox" id="cb-${i}-${c.value}" onclick="toggleClass(${i},'${c.value}',this)" style="padding:10px 14px;font-size:0.9rem;">
+<input type="checkbox" value="${c.value}">
+<div class="check-icon" style="width:18px;height:18px;font-size:0.7rem;"></div>
+${c.label}
+</label>`;
+});
+html += `</div></div>`;
+}
+}
 
-  container.innerHTML = html;
-  state.classes = Array(nb).fill(null);
+container.innerHTML = html;
+state.classes = Array(nb).fill(null);
 }
 
 function toggleClass(childIdx, classVal, label) {
-  // Pour chaque enfant, une seule classe possible
-  const nb = state.nbChildren;
-  // Désélectionner les autres pour cet enfant
-  ['6e','5e','4e','3e'].forEach(c => {
-    const el = document.getElementById(`cb-${childIdx}-${c}`);
-    if(el) { el.classList.remove('selected'); el.querySelector('.check-icon').textContent = ''; }
-  });
-  label.classList.add('selected');
-  label.querySelector('.check-icon').textContent = '✓';
-  if(!state.classes) state.classes = Array(nb).fill(null);
-  state.classes[childIdx] = classVal;
+// Pour chaque enfant, une seule classe possible
+const nb = state.nbChildren;
+// Désélectionner les autres pour cet enfant
+['6e','5e','4e','3e'].forEach(c => {
+const el = document.getElementById(`cb-${childIdx}-${c}`);
+if(el) { el.classList.remove('selected'); el.querySelector('.check-icon').textContent = ''; }
+});
+label.classList.add('selected');
+label.querySelector('.check-icon').textContent = '✓';
+if(!state.classes) state.classes = Array(nb).fill(null);
+state.classes[childIdx] = classVal;
 }
 
 function validateAndBuildForm() {
-  const nb = state.nbChildren;
-  if(!nb) { alert('Veuillez sélectionner le nombre d\'enfants.'); return; }
-  for(let i=0;i<nb;i++){
-    if(!state.classes[i]) { alert(`Veuillez sélectionner la classe de l'enfant ${i+1}.`); return; }
-  }
-  buildOrderForm();
-  goToScreen(3);
+const nb = state.nbChildren;
+if(!nb) { alert('Veuillez sélectionner le nombre d\'enfants.'); return; }
+for(let i=0;i<nb;i++){
+if(!state.classes[i]) { alert(`Veuillez sélectionner la classe de l'enfant ${i+1}.`); return; }
+}
+buildOrderForm();
+goToScreen(3);
 }
 
 // =====================
 // ÉCRAN 3 — CONSTRUCTION
 // =====================
 function getQtyForClass(item, cls) {
-  if(cls === '6e') return item.q6 || 0;
-  if(cls === '5e') return item.q5 || 0;
-  if(cls === '4e') return item.q4 || 0;
-  if(cls === '3e') return item.q3 || 0;
-  return 0;
+if(cls === '6e') return item.q6 || 0;
+if(cls === '5e') return item.q5 || 0;
+if(cls === '4e') return item.q4 || 0;
+if(cls === '3e') return item.q3 || 0;
+return 0;
 }
 
 function buildOrderForm() {
-  const nb = state.nbChildren;
-  const classes = state.classes;
+const nb = state.nbChildren;
+const classes = state.classes;
 
-  // Construire les labels colonnes enfants
-  // Regrouper les enfants par classe pour le calcul des quantités par défaut
-  const classMap = {}; // cls -> count
-  classes.forEach(c => { classMap[c] = (classMap[c]||0) + 1; });
+// Construire les labels colonnes enfants
+// Regrouper les enfants par classe pour le calcul des quantités par défaut
+const classMap = {}; // cls -> count
+classes.forEach(c => { classMap[c] = (classMap[c]||0) + 1; });
 
-  // Unique classes pour colonnes (si 2 enfants même classe, on n'a qu'une colonne mais quantité x2)
-  const uniqueClasses = [...new Set(classes)];
-  const colCount = uniqueClasses.length;
+// Unique classes pour colonnes (si 2 enfants même classe, on n'a qu'une colonne mais quantité x2)
+const uniqueClasses = [...new Set(classes)];
+const colCount = uniqueClasses.length;
 
-  // Grouper items par thème
-  const themes = {};
-  ITEMS.forEach(item => {
-    if(!themes[item.theme]) themes[item.theme] = [];
-    themes[item.theme].push(item);
-  });
+// Grouper items par thème
+const themes = {};
+ITEMS.forEach(item => {
+if(!themes[item.theme]) themes[item.theme] = [];
+themes[item.theme].push(item);
+});
 
-  let html = '';
-  let itemIdx = 0;
+let html = '';
+let itemIdx = 0;
 
-  // En-tête colonnes
-  const gridClass = `children-${colCount}`;
+// En-tête colonnes
+const gridClass = `children-${colCount}`;
 
-  Object.entries(themes).forEach(([theme, items]) => {
-    html += `<div class="theme-block">
-      <div class="theme-header">${theme}</div>`;
+Object.entries(themes).forEach(([theme, items]) => {
+html += `<div class="theme-block">
+<div class="theme-header">${theme}</div>`;
 
-    // Ligne headers colonnes
-    html += `<div class="item-row col-header-row ${gridClass}">
-      <div>Article</div>`;
-    uniqueClasses.forEach(cls => {
-      const cnt = classMap[cls];
-      html += `<div style="text-align:center;">${cls.replace('e','<sup>ème</sup>')}${cnt>1?' (x'+cnt+')':''}</div>`;
-    });
-    html += `<div style="text-align:right;">Sous-total</div>
-    </div>`;
+// Ligne headers colonnes
+html += `<div class="item-row col-header-row ${gridClass}">
+<div>Article</div>`;
+uniqueClasses.forEach(cls => {
+const cnt = classMap[cls];
+html += `<div style="text-align:center;">${cls.replace('e','<sup>ème</sup>')}${cnt>1?' (x'+cnt+')':''}</div>`;
+});
+html += `<div style="text-align:right;">Sous-total</div>
+</div>`;
 
-    items.forEach(item => {
-      const id = 'item-' + itemIdx;
-      html += `<div class="item-row ${gridClass}">
-        <div class="item-name">${item.name}</div>`;
+items.forEach(item => {
+const id = 'item-' + itemIdx;
+html += `<div class="item-row ${gridClass}">
+<div class="item-name">${item.name}</div>`;
 
-      if(item.textInfo) {
-        // Ligne info-texte, pas de dropdown
-        uniqueClasses.forEach(cls => {
-          html += `<div><span class="item-text-info">${item.textInfo}</span></div>`;
-        });
-        html += `<div class="price-cell">—</div>`;
-      } else if(!item.price) {
-        uniqueClasses.forEach(() => { html += `<div>—</div>`; });
-        html += `<div class="price-cell">—</div>`;
-      } else {
-        uniqueClasses.forEach((cls, ci) => {
-          const cnt = classMap[cls];
-          const defaultQty = getQtyForClass(item, cls) * cnt;
-          html += `<div><select class="qty-select" id="${id}-qty-${ci}" onchange="recalcRow('${id}', ${item.price}, ${colCount})">`;
-          for(let q=0;q<=10;q++){
-            html += `<option value="${q}" ${q===defaultQty?'selected':''}>${q}</option>`;
-          }
-          html += `</select></div>`;
-        });
-        html += `<div class="price-cell" id="${id}-price">—</div>`;
-        // Calculer le prix initial
-        setTimeout(() => recalcRow(id, item.price, colCount), 0);
-      }
+if(item.textInfo) {
+// Ligne info-texte, pas de dropdown
+uniqueClasses.forEach(cls => {
+html += `<div><span class="item-text-info">${item.textInfo}</span></div>`;
+});
+html += `<div class="price-cell">—</div>`;
+} else if(!item.price) {
+uniqueClasses.forEach(() => { html += `<div>—</div>`; });
+html += `<div class="price-cell">—</div>`;
+} else {
+uniqueClasses.forEach((cls, ci) => {
+const cnt = classMap[cls];
+const defaultQty = getQtyForClass(item, cls) * cnt;
+html += `<div><select class="qty-select" id="${id}-qty-${ci}" onchange="recalcRow('${id}', ${item.price}, ${colCount})">`;
+for(let q=0;q<=10;q++){
+html += `<option value="${q}" ${q===defaultQty?'selected':''}>${q}</option>`;
+}
+html += `</select></div>`;
+});
+html += `<div class="price-cell" id="${id}-price">—</div>`;
+// Calculer le prix initial
+setTimeout(() => recalcRow(id, item.price, colCount), 0);
+}
 
-      html += `</div>`;
-      itemIdx++;
-    });
+html += `</div>`;
+itemIdx++;
+});
 
-    html += `</div>`;
-  });
+html += `</div>`;
+});
 
-  document.getElementById('order-table').innerHTML = html;
-  setTimeout(recalcTotal, 50);
+document.getElementById('order-table').innerHTML = html;
+setTimeout(recalcTotal, 50);
 }
 
 function recalcRow(id, price, colCount) {
-  let total = 0;
-  for(let ci=0;ci<colCount;ci++){
-    const sel = document.getElementById(`${id}-qty-${ci}`);
-    if(sel) total += parseInt(sel.value) * price;
-  }
-  const priceEl = document.getElementById(`${id}-price`);
-  if(priceEl) priceEl.textContent = total.toFixed(2).replace('.',',') + ' €';
-  recalcTotal();
+let total = 0;
+for(let ci=0;ci<colCount;ci++){
+const sel = document.getElementById(`${id}-qty-${ci}`);
+if(sel) total += parseInt(sel.value) * price;
+}
+const priceEl = document.getElementById(`${id}-price`);
+if(priceEl) priceEl.textContent = total.toFixed(2).replace('.',',') + ' €';
+recalcTotal();
 }
 
 function recalcTotal() {
-  let grand = 0;
-  document.querySelectorAll('.price-cell').forEach(el => {
-    const val = parseFloat(el.textContent.replace(',','.').replace(' €',''));
-    if(!isNaN(val)) grand += val;
-  });
-  const fmt = grand.toFixed(2).replace('.',',') + ' €';
-  document.getElementById('grand-total').textContent = fmt;
-  const pt = document.getElementById('payment-total');
-  if(pt) pt.textContent = fmt;
-  const ptb = document.getElementById('payment-total-big');
-  if(ptb) ptb.textContent = fmt;
+let grand = 0;
+document.querySelectorAll('.price-cell').forEach(el => {
+const val = parseFloat(el.textContent.replace(',','.').replace(' €',''));
+if(!isNaN(val)) grand += val;
+});
+const fmt = grand.toFixed(2).replace('.',',') + ' €';
+document.getElementById('grand-total').textContent = fmt;
+const pt = document.getElementById('payment-total');
+if(pt) pt.textContent = fmt;
+const ptb = document.getElementById('payment-total-big');
+if(ptb) ptb.textContent = fmt;
 }
 
 // =====================
 // ÉCRAN 4 — RÉCAP
 // =====================
 function buildPaymentSummary() {
-  recalcTotal();
-  const totalText = document.getElementById('grand-total').textContent;
-  document.getElementById('payment-total').textContent = totalText;
-  const bigTotal = document.getElementById('payment-total-big');
-  if(bigTotal) bigTotal.textContent = totalText;
+recalcTotal();
+const totalText = document.getElementById('grand-total').textContent;
+document.getElementById('payment-total').textContent = totalText;
+const bigTotal = document.getElementById('payment-total-big');
+if(bigTotal) bigTotal.textContent = totalText;
 
-  let html = '';
-  const classes = state.classes;
-  const classMap = {};
-  classes.forEach(c => { classMap[c] = (classMap[c]||0)+1; });
-  const uniqueClasses = [...new Set(classes)];
+let html = '';
+const classes = state.classes;
+const classMap = {};
+classes.forEach(c => { classMap[c] = (classMap[c]||0)+1; });
+const uniqueClasses = [...new Set(classes)];
 
-  const rNom = document.getElementById('parent-nom') ? document.getElementById('parent-nom').value : '';
-  const rPrenom = document.getElementById('parent-prenom') ? document.getElementById('parent-prenom').value : '';
-  const rEmail = document.getElementById('parent-email') ? document.getElementById('parent-email').value : '';
-  const rTel = document.getElementById('parent-tel') ? document.getElementById('parent-tel').value : '';
-  html += `<div style="margin-bottom:10px;font-size:0.9rem;">
-    <strong>Parent :</strong> ${rPrenom} ${rNom}<br>
-    <strong>Email :</strong> ${rEmail}<br>
-    <strong>Téléphone :</strong> ${rTel}<br>
-    <strong>Enfant(s) :</strong> ${state.nbChildren}<br>
-    <strong>Classe(s) :</strong> ${classes.map(c=>c.replace('e','ème')).join(', ')}
-  </div>`;
+const rNom = document.getElementById('parent-nom') ? document.getElementById('parent-nom').value : '';
+const rPrenom = document.getElementById('parent-prenom') ? document.getElementById('parent-prenom').value : '';
+const rEmail = document.getElementById('parent-email') ? document.getElementById('parent-email').value : '';
+const rTel = document.getElementById('parent-tel') ? document.getElementById('parent-tel').value : '';
+html += `<div style="margin-bottom:10px;font-size:0.9rem;">
+<strong>Parent :</strong> ${rPrenom} ${rNom}<br>
+<strong>Email :</strong> ${rEmail}<br>
+<strong>Téléphone :</strong> ${rTel}<br>
+<strong>Enfant(s) :</strong> ${state.nbChildren}<br>
+<strong>Classe(s) :</strong> ${classes.map(c=>c.replace('e','ème')).join(', ')}
+</div>`;
 
-  html += `<div style="font-size:0.88rem;color:var(--text-light);">
-    Montant total des fournitures : <strong style="color:var(--text);">${totalText}</strong><br>
-    <em>Le détail de votre commande sera transmis à l'association après paiement.</em>
-  </div>`;
+html += `<div style="font-size:0.88rem;color:var(--text-light);">
+Montant total des fournitures : <strong style="color:var(--text);">${totalText}</strong><br>
+<em>Le détail de votre commande sera transmis à l'association après paiement.</em>
+</div>`;
 
-  document.getElementById('payment-summary').innerHTML = html;
+document.getElementById('payment-summary').innerHTML = html;
 }
 
 // =====================
 // ENVOI FORMSPREE
 // =====================
 function submitOrder() {
-  // Construire le résumé de commande
-  const classes = state.classes;
-  const classMap = {};
-  classes.forEach(c => { classMap[c] = (classMap[c]||0)+1; });
-  const uniqueClasses = [...new Set(classes)];
+// Construire le résumé de commande
+const classes = state.classes;
+const classMap = {};
+classes.forEach(c => { classMap[c] = (classMap[c]||0)+1; });
+const uniqueClasses = [...new Set(classes)];
 
-  let orderLines = [];
-  let grandTotal = 0;
+let orderLines = [];
+let grandTotal = 0;
 
-  // Parcourir tous les items visibles
-  let itemIdx = 0;
-  ITEMS.forEach(item => {
-    if (!item.textInfo && item.price) {
-      uniqueClasses.forEach((cls, ci) => {
-        const sel = document.getElementById(`item-${itemIdx}-qty-${ci}`);
-        if (sel && parseInt(sel.value) > 0) {
-          const qty = parseInt(sel.value);
-          const total = (qty * item.price).toFixed(2);
-          orderLines.push(`${item.name.replace(/<[^>]*>/g,'')} | Classe: ${cls} | Qté: ${qty} | Prix: ${total}€`);
-          grandTotal += qty * item.price;
-        }
-      });
-      itemIdx++;
-    } else {
-      itemIdx++;
-    }
-  });
+// Parcourir tous les items visibles
+let itemIdx = 0;
+ITEMS.forEach(item => {
+if (!item.textInfo && item.price) {
+uniqueClasses.forEach((cls, ci) => {
+const sel = document.getElementById(`item-${itemIdx}-qty-${ci}`);
+if (sel && parseInt(sel.value) > 0) {
+const qty = parseInt(sel.value);
+const total = (qty * item.price).toFixed(2);
+orderLines.push(`${item.name.replace(/<[^>]*>/g,'')} | Classe: ${cls} | Qté: ${qty} | Prix: ${total}€`);
+grandTotal += qty * item.price;
+}
+});
+itemIdx++;
+} else {
+itemIdx++;
+}
+});
 
-  const totalText = grandTotal.toFixed(2).replace('.', ',') + ' €';
+const totalText = grandTotal.toFixed(2).replace('.', ',') + ' €';
 
-  // Construire les données du formulaire
-  const formData = new FormData();
-  const parentNom = document.getElementById('parent-nom').value.trim();
-  const parentPrenom = document.getElementById('parent-prenom').value.trim();
-  const parentEmail = document.getElementById('parent-email').value.trim();
-  const parentTel = document.getElementById('parent-tel').value.trim();
-  formData.append('Nom', parentNom);
-  formData.append('Prenom', parentPrenom);
-  formData.append('Email', parentEmail);
-  formData.append('Telephone', parentTel);
-  formData.append('Nombre_enfants', state.nbChildren);
-  formData.append('Classes', classes.map(c=>c.replace('e','ème')).join(', '));
-  formData.append('Total', totalText);
-  formData.append('Commande_detail', orderLines.join('\n'));
+// Construire les données du formulaire
+const formData = new FormData();
+const parentNom = document.getElementById('parent-nom').value.trim();
+const parentPrenom = document.getElementById('parent-prenom').value.trim();
+const parentEmail = document.getElementById('parent-email').value.trim();
+const parentTel = document.getElementById('parent-tel').value.trim();
+formData.append('Nom', parentNom);
+formData.append('Prenom', parentPrenom);
+formData.append('Email', parentEmail);
+formData.append('Telephone', parentTel);
+formData.append('Nombre_enfants', state.nbChildren);
+formData.append('Classes', classes.map(c=>c.replace('e','ème')).join(', '));
+formData.append('Total', totalText);
+formData.append('Commande_detail', orderLines.join('\n'));
 
-  // Afficher un message de chargement
-  const btn = event.target;
-  btn.textContent = '⏳ Envoi en cours...';
-  btn.disabled = true;
+// Afficher un message de chargement
+const btn = event.target;
+btn.textContent = '⏳ Envoi en cours...';
+btn.disabled = true;
 
-  fetch('https://formspree.io/f/mzdqplvj', {
-    method: 'POST',
-    body: formData,
-    headers: { 'Accept': 'application/json' }
-  })
-  .then(response => {
-    if (response.ok) {
-      goToScreen(4);
-    } else {
-      // En cas d'erreur Formspree, on passe quand même à l'écran 4
-      goToScreen(4);
-    }
-  })
-  .catch(() => {
-    // En cas d'erreur réseau, on passe quand même à l'écran 4
-    goToScreen(4);
-  });
+fetch('https://formspree.io/f/mzdqplvj', {
+method: 'POST',
+body: formData,
+headers: { 'Accept': 'application/json' }
+})
+.then(response => {
+if (response.ok) {
+goToScreen(4);
+} else {
+// En cas d'erreur Formspree, on passe quand même à l'écran 4
+goToScreen(4);
+}
+})
+.catch(() => {
+// En cas d'erreur réseau, on passe quand même à l'écran 4
+goToScreen(4);
+});
 }
 </script>
 </body>
